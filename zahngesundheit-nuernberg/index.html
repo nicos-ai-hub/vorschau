@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praxisgemeinschaft Dres. Ruppert & Kollegen – Ihr Fachbetrieb | Entwurf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --accent: #115e99; --dark: #16232d; --light: #eef4f9; --ink: #1e2422; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Manrope', sans-serif; color: var(--ink); background: #fff;
+         line-height: 1.65; }
+  .draft-banner { background: var(--dark); }
+  .draft-banner span { display: block; color: #fff; opacity: .92; text-align: center;
+    font-size: .78rem; padding: .5rem 1rem; }
+  header { display: flex; justify-content: space-between; align-items: center;
+    gap: 1rem; flex-wrap: wrap; padding: 1rem 6vw; }
+  .brand { font-weight: 800; font-size: 1.2rem; }
+  .brand small { display: block; font-weight: 600; font-size: .72rem;
+    color: var(--accent); letter-spacing: .08em; text-transform: uppercase; }
+  header .phone { background: var(--accent); color: #fff; text-decoration: none;
+    font-weight: 600; padding: .55rem 1.3rem; border-radius: 999px; font-size: .92rem; }
+  .hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2.4rem;
+    padding: clamp(2.4rem, 6vw, 4.2rem) 6vw; align-items: center; }
+  @media (max-width: 760px) { .hero { grid-template-columns: 1fr; } }
+  .hero h1 { font-weight: 800; font-size: clamp(1.9rem, 4.6vw, 3rem); line-height: 1.14; }
+  .hero h1 em { font-style: normal;
+    background: linear-gradient(transparent 62%, var(--light) 62%);
+    color: var(--accent); }
+  .hero p { margin-top: 1rem; font-size: 1.06rem; color: #47524d; max-width: 48ch; }
+  .hero .cta { display: inline-block; margin-top: 1.4rem; background: var(--accent);
+    color: #fff; text-decoration: none; font-weight: 600; padding: .8rem 1.7rem;
+    border-radius: 999px; }
+  .trustbar { background: var(--light); border-radius: 22px; padding: 1.4rem 1.6rem; }
+  .trustbar span { display: block; padding: .45rem 0; font-weight: 600; font-size: .95rem; }
+  .trustbar span::before { content: "✓ "; color: var(--accent); font-weight: 800; }
+  section { padding: clamp(2.4rem, 6vw, 4rem) 6vw; }
+  .eyebrow { font-size: .76rem; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--accent); font-weight: 800; margin-bottom: .5rem; }
+  h2 { font-weight: 800; font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 1.5rem; }
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem; }
+  .service { background: #fff; border: 2px solid var(--light); border-radius: 18px;
+    padding: 1.2rem 1.3rem; font-weight: 600;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .05); }
+  .service::before { content: "●"; display: block; color: var(--accent);
+    margin-bottom: .5rem; }
+  .contact { margin: 0 6vw clamp(2.4rem, 6vw, 4rem); background: var(--dark);
+    color: #fff; border-radius: 26px; padding: clamp(2rem, 5vw, 3.2rem); }
+  section.contact { padding: clamp(2rem, 5vw, 3.2rem); }
+  .contact h2 { color: #fff; }
+  .contact .eyebrow { color: var(--light); }
+  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.3rem; margin-top: .4rem; }
+  .contact-grid div strong { display: block; font-size: .74rem; letter-spacing: .12em;
+    text-transform: uppercase; margin-bottom: .25rem; opacity: .75; }
+  .contact-grid a { color: #fff; }
+  footer { padding: 1.2rem 6vw 1.8rem; font-size: .84rem; color: #7d8783;
+    display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
+  footer a { color: #7d8783; }
+</style>
+</head>
+<body>
+<div class="draft-banner"><span>ENTWURF – So könnte Ihre neue Website aussehen · unverbindliche Vorschau</span></div>
+<header>
+  <div class="brand">Praxisgemeinschaft Dres. Ruppert & Kollegen<small>Ihr Fachbetrieb · Nürnberg</small></div>
+  <a class="phone" href="tel:0911 / 51 57 71">0911 / 51 57 71</a>
+</header>
+<div class="hero">
+  <div>
+    <h1>Zahnmedizin & Implantologie in Nürnberg. <em>Ästhetik, Funktion & orale Gesundheit</em></h1>
+    <p>Wir behandeln Ihre Zähne mit modernen Verfahren – von Implantaten über Parodontologie bis zur ästhetischen Zahnheilkunde.</p>
+    <a class="cta" href="#kontakt">Kostenlos anfragen</a>
+  </div>
+  <div class="trustbar">
+    <span>Fachzahnarzt für Parodontologie</span><span>Praxisgemeinschaft mit eigenem Meisterlabor</span><span>Persönliche Beratung</span><span>Schnelle Rückmeldung</span>
+  </div>
+</div>
+<section>
+  <div class="eyebrow">Unsere Leistungen</div>
+  <h2>Was wir für Sie tun</h2>
+  <div class="services"><div class="service">3D-Implantatplanung & Diagnostik</div><div class="service">Parodontologie & Zahnerhaltung</div><div class="service">Ästhetische Zahnheilkunde</div><div class="service">Angstbehandlung & Narkose</div></div>
+</section>
+<section class="contact" id="kontakt">
+  <div class="eyebrow">Kontakt</div>
+  <h2>Sprechen Sie uns an</h2>
+  <div class="contact-grid">
+    <div><strong>Telefon</strong><a href="tel:0911 / 51 57 71">0911 / 51 57 71</a></div><div><strong>E-Mail</strong><a href="mailto:info@zahngesundheit-nuernberg.de">info@zahngesundheit-nuernberg.de</a></div>
+    <div><strong>Anschrift</strong>Nürnberg</div>
+  </div>
+</section>
+<footer>
+  <span>© Praxisgemeinschaft Dres. Ruppert & Kollegen</span>
+  <span><a href="#">Impressum</a> · <a href="#">Datenschutz</a> – rechtssicher inklusive</span>
+</footer>
+</body>
+</html>
