@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt – Nico Sommer | sommerwebdesign.com</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="canonical" href="https://www.sommerwebdesign.com/kontakt.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sommer Webdesign">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Kontakt – Sommer Webdesign">
+<meta property="og:description" content="Kostenlosen Beispiel-Entwurf anfragen: einfach eine E-Mail an sommer@sommerwebdesign.com – unverbindlich, ohne Risiko, für jede Branche.">
+<meta property="og:url" content="https://www.sommerwebdesign.com/kontakt.html">
+<meta property="og:image" content="https://www.sommerwebdesign.com/og-bild.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Kostenlosen Beispiel-Entwurf anfragen: einfach eine E-Mail an sommer@sommerwebdesign.com – unverbindlich, ohne Risiko, für jede Branche.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0c11; --flaeche: #10131a; --linie: rgba(255,255,255,.08);
+    --text: #e8eaf0; --leise: #9aa3b5;
+    --cyan: #67e8f9; --violett: #a78bfa; --pink: #f0abfc;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  ::selection { background: #a78bfa55; }
+  body {
+    font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text);
+    line-height: 1.65; overflow-x: hidden;
+  }
+  .glut { position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background:
+      radial-gradient(600px 400px at 85% -5%, rgba(167,139,250,.16), transparent 65%),
+      radial-gradient(700px 500px at -10% 25%, rgba(103,232,249,.10), transparent 65%),
+      radial-gradient(600px 500px at 60% 110%, rgba(240,171,252,.08), transparent 65%);
+  }
+  h1, h2, h3, .zahl { font-family: 'Space Grotesk', sans-serif; }
+  .verlauf-text {
+    background: linear-gradient(92deg, var(--cyan), var(--violett) 55%, var(--pink));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  header {
+    position: sticky; top: 0; z-index: 50;
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    padding: .85rem 5vw; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    background: rgba(10, 12, 17, .72); border-bottom: 1px solid var(--linie);
+  }
+  .marke { text-decoration: none; display: inline-flex; align-items: center; gap: .55rem; border: 1.5px solid rgba(232,234,240,.7); border-radius: 999px; padding: .42rem 1.05rem; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: .78rem; letter-spacing: .18em; color: #e8eaf0; }
+  .marke b { color: #67e8f9; font-weight: 500; }
+  nav { display: flex; gap: 1.1rem; align-items: center; white-space: nowrap; }
+  nav a { color: var(--leise); text-decoration: none; font-size: .9rem; font-weight: 500; position: relative; }
+  nav a:hover { color: #fff; }
+  nav a.aktiv { color: #fff; }
+  nav a.aktiv::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px;
+    background: linear-gradient(92deg, var(--cyan), var(--violett)); border-radius: 2px; }
+  nav a.knopf { color: #0a0c11; background: #fff; padding: .5rem 1.1rem; border-radius: 999px; font-weight: 600; }
+  nav a.knopf:hover { background: var(--cyan); }
+  .nav-knopf { display: none; background: rgba(255,255,255,.04); border: 1px solid var(--linie);
+    color: var(--text); font-size: 1.15rem; border-radius: 10px; padding: .35rem .75rem;
+    cursor: pointer; line-height: 1; }
+  @media (max-width: 1020px) {
+    header { flex-wrap: wrap; }
+    .nav-knopf { display: block; }
+    nav { display: none; width: 100%; flex-direction: column; align-items: stretch;
+      gap: .2rem; padding: .6rem 0 .3rem; }
+    nav.offen { display: flex; }
+    nav a { padding: .55rem .2rem; font-size: 1rem; border-bottom: 1px solid var(--linie); }
+    nav a:last-child { border-bottom: 0; }
+    nav a.aktiv::after { display: none; }
+    nav a.aktiv { color: var(--cyan); }
+    nav a.knopf { text-align: center; margin-top: .4rem; }
+  }
+  .hero { padding: clamp(3.2rem, 8vw, 5.5rem) 5vw clamp(1.6rem, 4vw, 2.4rem); max-width: 1100px; margin: 0 auto; }
+  .abzeichen {
+    display: inline-flex; align-items: center; gap: .5rem; font-size: .82rem; color: var(--leise);
+    border: 1px solid var(--linie); background: rgba(255,255,255,.03);
+    padding: .35rem .9rem; border-radius: 999px; margin-bottom: 1.4rem;
+  }
+  .abzeichen::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%;
+    background: #34d399; box-shadow: 0 0 10px #34d399; }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; line-height: 1.12;
+             letter-spacing: -.02em; max-width: 22ch; }
+  .hero .lauftext { margin-top: 1.3rem; font-size: 1.08rem; color: var(--leise); max-width: 58ch; }
+  .cta {
+    display: inline-flex; align-items: center; gap: .5rem; text-decoration: none;
+    font-weight: 600; font-size: .98rem; padding: .85rem 1.6rem; border-radius: 999px;
+    background: linear-gradient(92deg, var(--cyan), var(--violett)); color: #0a0c11;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(167,139,250,.35); }
+  section { padding: clamp(1.4rem, 6vw, 2.4rem) 5vw; max-width: 1100px; margin: 0 auto; }
+  .vorzeile { font-size: .8rem; letter-spacing: .18em; text-transform: uppercase;
+              font-weight: 600; color: var(--violett); margin-bottom: .7rem; }
+  h2 { font-size: clamp(1.5rem, 3.2vw, 2.1rem); font-weight: 700; letter-spacing: -.015em;
+       max-width: 34ch; margin-bottom: 1.4rem; }
+  .zweispaltig { display: grid; grid-template-columns: 1.1fr .9fr; gap: 1.6rem; align-items: start; }
+  @media (max-width: 800px) { .zweispaltig { grid-template-columns: 1fr; } }
+  .kontakt-karte {
+    background: var(--flaeche); border: 1px solid var(--linie); border-radius: 24px;
+    padding: clamp(1.6rem, 4vw, 2.4rem);
+  }
+  .kontakt-karte .mail-cta {
+    display: inline-flex; align-items: center; gap: .6rem; text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+    font-size: clamp(1.05rem, 2.6vw, 1.35rem);
+    color: var(--text); border-bottom: 2px solid var(--cyan); padding-bottom: .2rem;
+  }
+  .kontakt-karte .mail-cta:hover { color: var(--cyan); }
+  .kontakt-karte p.leise { color: var(--leise); font-size: .92rem; margin-top: 1rem; }
+  .checkliste { list-style: none; margin-top: 1.2rem; }
+  .checkliste li { padding: .5rem 0; padding-left: 1.8rem; position: relative;
+    font-size: .95rem; color: var(--text); }
+  .checkliste li::before { content: "✓"; position: absolute; left: 0; color: var(--cyan);
+    font-weight: 700; }
+  .checkliste li small { display: block; color: var(--leise); font-size: .84rem; margin-top: .1rem; }
+  .info-liste { display: flex; flex-direction: column; gap: 1rem; }
+  .info-punkt { background: var(--flaeche); border: 1px solid var(--linie);
+    border-radius: 16px; padding: 1.2rem 1.4rem; }
+  .info-punkt h3 { font-size: .98rem; margin-bottom: .3rem; }
+  .info-punkt p { color: var(--leise); font-size: .9rem; }
+  footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+           padding: 1.6rem 5vw 2.2rem; max-width: 1100px; margin: 0 auto;
+           color: var(--leise); font-size: .84rem; border-top: 1px solid var(--linie); }
+  footer a { color: var(--leise); }
+  footer a:hover { color: #fff; }
+  @media (max-width: 600px) {
+    .cta { display: flex; justify-content: center; width: 100%; }
+    section { padding-left: 5.5vw; padding-right: 5.5vw; }
+  }
+  body::after { content: ""; position: fixed; inset: 0; z-index: 90; pointer-events: none; opacity: .05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E"); }
+</style>
+</head>
+<body>
+<div class="glut"></div>
+<header>
+  <a class="marke" href="index.html"><svg width="16" height="9" viewBox="0 0 16 9" aria-hidden="true"><path d="M1 9A7 7 0 0 1 15 9Z" fill="#facc15"/></svg>SOMMER <b>WEBDESIGN</b></a>
+  <button class="nav-knopf" aria-label="Menü öffnen" onclick="document.querySelector('nav').classList.toggle('offen')">☰ Menü</button>
+  <nav onclick="if(event.target.tagName==='A')this.classList.remove('offen')">
+    <a href="index.html">Start</a>
+    <a href="leistungen.html">Leistungen</a>
+    <a href="index.html#arbeiten">Arbeiten</a>
+    <a href="ueber-mich.html">Über mich</a>
+    <a href="index.html#preise">Preise</a>
+    <a href="faq.html">FAQ</a>
+    <a class="knopf" href="kontakt.html" aria-current="page">Projekt anfragen</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="abzeichen">Verfügbar für neue Projekte</div>
+  <h1>Ihr kostenloser <span class="verlauf-text">Beispiel-Entwurf</span> wartet.</h1>
+  <p class="lauftext">Schreiben Sie mir kurz, was für ein Unternehmen Sie führen –
+  Sie bekommen innerhalb weniger Tage einen unverbindlichen Beispiel-Entwurf.
+  Egal welche Branche. Kein Kleingedrucktes, kein Risiko.</p>
+</div>
+
+<section>
+  <div class="zweispaltig">
+    <div class="kontakt-karte">
+      <div class="vorzeile">Direkt schreiben</div>
+      <a class="mail-cta" href="mailto:sommer@sommerwebdesign.com?subject=Anfrage%20kostenloser%20Entwurf">
+        sommer@sommerwebdesign.com →</a>
+      <p class="leise">Ich melde mich so schnell wie möglich persönlich bei Ihnen zurück.</p>
+      <ul class="checkliste">
+        <li>Um welches Unternehmen geht es?<small>Name und Branche reichen völlig.</small></li>
+        <li>Gibt es schon eine Website?<small>Ein Link zur bestehenden Seite hilft, ist aber kein Muss.</small></li>
+        <li>In welcher Region sind Sie tätig?<small>Für Ansprache und passende Beispiele.</small></li>
+      </ul>
+    </div>
+    <div class="info-liste">
+      <div class="info-punkt"><h3>💡 Unverbindlich</h3>
+        <p>Der erste Entwurf kostet nichts. Erst nach Ihrer Beauftragung entstehen Kosten.</p></div>
+      <div class="info-punkt"><h3>🧾 Klare Preise</h3>
+        <p>899 € einmalig oder 49 €/Monat im Rundum-sorglos-Paket – <a href="index.html#preise" style="color:var(--cyan);">Details ansehen</a>.</p></div>
+      <div class="info-punkt"><h3>❓ Noch unsicher?</h3>
+        <p>Ein Blick in die <a href="faq.html" style="color:var(--cyan);">häufigen Fragen</a> hilft oft schon weiter.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© Nico Sommer · <a href="index.html" style="color:var(--cyan); text-decoration:none;">sommerwebdesign.com</a></span>
+  <span><a href="index.html">Start</a> · <a href="leistungen.html">Leistungen</a> · <a href="ueber-mich.html">Über mich</a> · <a href="faq.html">FAQ</a> · <a href="kontakt.html">Kontakt</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+</footer>
+</body>
+</html>
