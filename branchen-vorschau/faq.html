@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Häufige Fragen – Nico Sommer | sommerwebdesign.com</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="canonical" href="https://www.sommerwebdesign.com/faq.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sommer Webdesign">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Häufige Fragen – Sommer Webdesign">
+<meta property="og:description" content="Muss ich vorab zahlen? Was, wenn mir der Entwurf nicht gefällt? Wie lange dauert es? Antworten auf die häufigsten Fragen zu sommerwebdesign.com.">
+<meta property="og:url" content="https://www.sommerwebdesign.com/faq.html">
+<meta property="og:image" content="https://www.sommerwebdesign.com/og-bild.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Muss ich vorab zahlen? Was, wenn mir der Entwurf nicht gefällt? Wie lange dauert es? Antworten auf die häufigsten Fragen zu sommerwebdesign.com.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0c11; --flaeche: #10131a; --linie: rgba(255,255,255,.08);
+    --text: #e8eaf0; --leise: #9aa3b5;
+    --cyan: #67e8f9; --violett: #a78bfa; --pink: #f0abfc;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  ::selection { background: #a78bfa55; }
+  body {
+    font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text);
+    line-height: 1.65; overflow-x: hidden;
+  }
+  .glut { position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background:
+      radial-gradient(600px 400px at 85% -5%, rgba(167,139,250,.16), transparent 65%),
+      radial-gradient(700px 500px at -10% 25%, rgba(103,232,249,.10), transparent 65%),
+      radial-gradient(600px 500px at 60% 110%, rgba(240,171,252,.08), transparent 65%);
+  }
+  h1, h2, h3, .zahl { font-family: 'Space Grotesk', sans-serif; }
+  .verlauf-text {
+    background: linear-gradient(92deg, var(--cyan), var(--violett) 55%, var(--pink));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  header {
+    position: sticky; top: 0; z-index: 50;
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    padding: .85rem 5vw; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    background: rgba(10, 12, 17, .72); border-bottom: 1px solid var(--linie);
+  }
+  .marke { text-decoration: none; display: inline-flex; align-items: center; gap: .55rem; border: 1.5px solid rgba(232,234,240,.7); border-radius: 999px; padding: .42rem 1.05rem; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: .78rem; letter-spacing: .18em; color: #e8eaf0; }
+  .marke b { color: #67e8f9; font-weight: 500; }
+  nav { display: flex; gap: 1.1rem; align-items: center; white-space: nowrap; }
+  nav a { color: var(--leise); text-decoration: none; font-size: .9rem; font-weight: 500; position: relative; }
+  nav a:hover { color: #fff; }
+  nav a.aktiv { color: #fff; }
+  nav a.aktiv::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px;
+    background: linear-gradient(92deg, var(--cyan), var(--violett)); border-radius: 2px; }
+  nav a.knopf { color: #0a0c11; background: #fff; padding: .5rem 1.1rem; border-radius: 999px; font-weight: 600; }
+  nav a.knopf:hover { background: var(--cyan); }
+  .nav-knopf { display: none; background: rgba(255,255,255,.04); border: 1px solid var(--linie);
+    color: var(--text); font-size: 1.15rem; border-radius: 10px; padding: .35rem .75rem;
+    cursor: pointer; line-height: 1; }
+  @media (max-width: 1020px) {
+    header { flex-wrap: wrap; }
+    .nav-knopf { display: block; }
+    nav { display: none; width: 100%; flex-direction: column; align-items: stretch;
+      gap: .2rem; padding: .6rem 0 .3rem; }
+    nav.offen { display: flex; }
+    nav a { padding: .55rem .2rem; font-size: 1rem; border-bottom: 1px solid var(--linie); }
+    nav a:last-child { border-bottom: 0; }
+    nav a.aktiv::after { display: none; }
+    nav a.aktiv { color: var(--cyan); }
+    nav a.knopf { text-align: center; margin-top: .4rem; }
+  }
+  .hero { padding: clamp(3.2rem, 8vw, 5.5rem) 5vw clamp(2rem, 5vw, 3rem); max-width: 1100px; margin: 0 auto; }
+  .abzeichen {
+    display: inline-flex; align-items: center; gap: .5rem; font-size: .82rem; color: var(--leise);
+    border: 1px solid var(--linie); background: rgba(255,255,255,.03);
+    padding: .35rem .9rem; border-radius: 999px; margin-bottom: 1.4rem;
+  }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; line-height: 1.12;
+             letter-spacing: -.02em; max-width: 22ch; }
+  .hero .lauftext { margin-top: 1.3rem; font-size: 1.08rem; color: var(--leise); max-width: 58ch; }
+  .cta {
+    display: inline-flex; align-items: center; gap: .5rem; text-decoration: none;
+    font-weight: 600; font-size: .98rem; padding: .85rem 1.6rem; border-radius: 999px;
+    background: linear-gradient(92deg, var(--cyan), var(--violett)); color: #0a0c11;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(167,139,250,.35); }
+  section { padding: clamp(1.4rem, 6vw, 2.4rem) 5vw; max-width: 900px; margin: 0 auto; }
+  .vorzeile { font-size: .8rem; letter-spacing: .18em; text-transform: uppercase;
+              font-weight: 600; color: var(--violett); margin-bottom: .7rem; }
+  .faq-liste { display: flex; flex-direction: column; gap: .7rem; margin-top: .8rem; }
+  details {
+    background: var(--flaeche); border: 1px solid var(--linie); border-radius: 16px;
+    padding: 1.1rem 1.3rem; transition: border-color .2s;
+  }
+  details[open] { border-color: rgba(167,139,250,.4); }
+  summary {
+    cursor: pointer; font-weight: 600; font-size: 1rem; list-style: none;
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+"; font-size: 1.3rem; color: var(--cyan); flex-shrink: 0;
+    transition: transform .2s; font-family: 'Space Grotesk', sans-serif;
+  }
+  details[open] summary::after { transform: rotate(45deg); }
+  details p { margin-top: .8rem; color: var(--leise); font-size: .95rem; max-width: 65ch; }
+  .finale {
+    text-align: center; border: 1px solid var(--linie); border-radius: 28px;
+    padding: clamp(2.2rem, 6vw, 3.6rem) 5vw; background:
+      radial-gradient(500px 260px at 50% -20%, rgba(167,139,250,.18), transparent 70%), var(--flaeche);
+    max-width: 1100px; margin: clamp(1.5rem,4vw,2.5rem) auto 0;
+  }
+  .finale h2 { font-size: clamp(1.5rem, 3.2vw, 2.1rem); margin: 0 auto 1rem; }
+  .finale p { color: var(--leise); max-width: 52ch; margin: 0 auto 1.6rem; }
+  footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+           padding: 1.6rem 5vw 2.2rem; max-width: 1100px; margin: 0 auto;
+           color: var(--leise); font-size: .84rem; border-top: 1px solid var(--linie); }
+  footer a { color: var(--leise); }
+  footer a:hover { color: #fff; }
+  @media (max-width: 600px) {
+    .cta { display: flex; justify-content: center; width: 100%; }
+    section { padding-left: 5.5vw; padding-right: 5.5vw; }
+  }
+  body::after { content: ""; position: fixed; inset: 0; z-index: 90; pointer-events: none; opacity: .05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E"); }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Muss ich im Voraus etwas bezahlen?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Der erste Beispiel-Entwurf ist komplett kostenlos und unverbindlich. Sie zahlen erst, wenn Sie mich beauftragen."}}, {"@type": "Question", "name": "Was passiert, wenn mir der Entwurf nicht gefällt?", "acceptedAnswer": {"@type": "Answer", "text": "Dann entstehen keinerlei Kosten für Sie. Der Entwurf ist ein Beispiel, keine Verpflichtung – Sie können jederzeit absagen, ohne Begründung."}}, {"@type": "Question", "name": "Wie lange dauert es, bis meine Website online ist?", "acceptedAnswer": {"@type": "Answer", "text": "Nach Ihrer Beauftragung geht es meist innerhalb weniger Tage online – abhängig davon, wie schnell die nötigen Angaben (Firmendaten, Texte, Fotos) vorliegen."}}, {"@type": "Question", "name": "Kann ich später noch Änderungen vornehmen lassen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Vor dem Livegang sind Anpassungswünsche im Preis inklusive. Danach übernehme ich im Rundum-sorglos-Paket laufende Änderungen dauerhaft; im Einmal-Paket sind spätere Anpassungen gegen Aufwand jederzeit möglich."}}, {"@type": "Question", "name": "Was passiert mit meiner alten Website?", "acceptedAnswer": {"@type": "Answer", "text": "Die entscheiden Sie: Ihre alte Website kann parallel weiterlaufen, bis die neue fertig ist, oder direkt abgelöst werden. Inhalte wie Ihre Firmengeschichte übernehme ich auf Wunsch in die neue Website."}}, {"@type": "Question", "name": "Brauche ich technisches Wissen?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Sie müssen nichts installieren, konfigurieren oder programmieren. Sie sagen mir, was Sie möchten – den Rest erledige ich."}}, {"@type": "Question", "name": "Wem gehört die Website danach?", "acceptedAnswer": {"@type": "Answer", "text": "Beim Einmal-Paket gehört Ihnen die Website vollständig. Beim Rundum-sorglos-Paket sind Hosting und Domain Teil des laufenden Vertrags – die Inhalte bleiben selbstverständlich Ihre."}}, {"@type": "Question", "name": "Ist meine Website für Suchmaschinen optimiert?", "acceptedAnswer": {"@type": "Answer", "text": "Jede Website wird mit sauberen Grundlagen für Suchmaschinen ausgeliefert: aussagekräftige Seitentitel, Beschreibungen, schnelle Ladezeiten und Handy-Optimierung. Das ist Standard, kein Aufpreis."}}, {"@type": "Question", "name": "Kann ich eine eigene Domain nutzen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Sie können Ihre bestehende Domain verwenden oder ich unterstütze Sie bei der Wahl und Einrichtung einer neuen."}}, {"@type": "Question", "name": "Ist meine Website rechtlich abgesichert?", "acceptedAnswer": {"@type": "Answer", "text": "Impressum und Datenschutzerklärung nach deutschem Recht sind bei jeder Website automatisch dabei. Die konkreten Firmenangaben tragen Sie mit mir gemeinsam ein."}}]}</script>
+</head>
+<body>
+<div class="glut"></div>
+<header>
+  <a class="marke" href="index.html"><svg width="16" height="9" viewBox="0 0 16 9" aria-hidden="true"><path d="M1 9A7 7 0 0 1 15 9Z" fill="#facc15"/></svg>SOMMER <b>WEBDESIGN</b></a>
+  <button class="nav-knopf" aria-label="Menü öffnen" onclick="document.querySelector('nav').classList.toggle('offen')">☰ Menü</button>
+  <nav onclick="if(event.target.tagName==='A')this.classList.remove('offen')">
+    <a href="index.html">Start</a>
+    <a href="leistungen.html">Leistungen</a>
+    <a href="index.html#arbeiten">Arbeiten</a>
+    <a href="ueber-mich.html">Über mich</a>
+    <a href="index.html#preise">Preise</a>
+    <a href="faq.html" class="aktiv">FAQ</a>
+    <a class="knopf" href="kontakt.html">Projekt anfragen</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="abzeichen">Häufige Fragen</div>
+  <h1>Fragen? <span class="verlauf-text">Hier die Antworten.</span></h1>
+  <p class="lauftext">Die häufigsten Fragen vor einer Beauftragung – ehrlich beantwortet.
+  Fehlt etwas? Einfach direkt <a href="kontakt.html" style="color:var(--cyan);">fragen</a>.</p>
+</div>
+
+<section>
+  <div class="faq-liste">
+    <details>
+      <summary>Muss ich im Voraus etwas bezahlen?</summary>
+      <p>Nein. Der erste Beispiel-Entwurf ist komplett kostenlos und unverbindlich.
+      Sie zahlen erst, wenn Sie mich beauftragen.</p>
+    </details>
+    <details>
+      <summary>Was passiert, wenn mir der Entwurf nicht gefällt?</summary>
+      <p>Dann entstehen keinerlei Kosten für Sie. Der Entwurf ist ein Beispiel,
+      keine Verpflichtung – Sie können jederzeit absagen, ohne Begründung.</p>
+    </details>
+    <details>
+      <summary>Wie lange dauert es, bis meine Website online ist?</summary>
+      <p>Nach Ihrer Beauftragung geht es meist innerhalb weniger Tage online –
+      abhängig davon, wie schnell die nötigen Angaben (Firmendaten, Texte,
+      Fotos) vorliegen.</p>
+    </details>
+    <details>
+      <summary>Kann ich später noch Änderungen vornehmen lassen?</summary>
+      <p>Ja. Vor dem Livegang sind Anpassungswünsche im Preis inklusive. Danach
+      übernehme ich im Rundum-sorglos-Paket laufende Änderungen dauerhaft;
+      im Einmal-Paket sind spätere Anpassungen gegen Aufwand jederzeit möglich.</p>
+    </details>
+    <details>
+      <summary>Was passiert mit meiner alten Website?</summary>
+      <p>Die entscheiden Sie: Ihre alte Website kann parallel weiterlaufen, bis
+      die neue fertig ist, oder direkt abgelöst werden. Inhalte wie Ihre
+      Firmengeschichte übernehme ich auf Wunsch in die neue Website.</p>
+    </details>
+    <details>
+      <summary>Brauche ich technisches Wissen?</summary>
+      <p>Nein. Sie müssen nichts installieren, konfigurieren oder programmieren.
+      Sie sagen mir, was Sie möchten – den Rest erledige ich.</p>
+    </details>
+    <details>
+      <summary>Wem gehört die Website danach?</summary>
+      <p>Beim Einmal-Paket gehört Ihnen die Website vollständig. Beim
+      Rundum-sorglos-Paket sind Hosting und Domain Teil des laufenden
+      Vertrags – die Inhalte bleiben selbstverständlich Ihre.</p>
+    </details>
+    <details>
+      <summary>Ist meine Website für Suchmaschinen optimiert?</summary>
+      <p>Jede Website wird mit sauberen Grundlagen für Suchmaschinen
+      ausgeliefert: aussagekräftige Seitentitel, Beschreibungen, schnelle
+      Ladezeiten und Handy-Optimierung. Das ist Standard, kein Aufpreis.</p>
+    </details>
+    <details>
+      <summary>Kann ich eine eigene Domain nutzen?</summary>
+      <p>Ja. Sie können Ihre bestehende Domain verwenden oder ich unterstütze
+      Sie bei der Wahl und Einrichtung einer neuen.</p>
+    </details>
+    <details>
+      <summary>Ist meine Website rechtlich abgesichert?</summary>
+      <p>Impressum und Datenschutzerklärung nach deutschem Recht sind bei jeder
+      Website automatisch dabei. Die konkreten Firmenangaben tragen Sie mit
+      mir gemeinsam ein.</p>
+    </details>
+    <details>
+      <summary>Was passiert, wenn ich das Rundum-Paket kündige?</summary>
+      <p>Dann bekommen Sie Ihre komplette Website als Dateipaket übergeben –
+      alle Seiten, Texte und Bilder. Ihre Domain gehört ohnehin Ihnen und
+      zieht einfach mit um. Kein Kleingedrucktes, keine „Geiselhaft“.</p>
+    </details>
+    <details>
+      <summary>Gibt es versteckte Kosten oder eine Einrichtungsgebühr?</summary>
+      <p>Nein. Es gilt genau das, was auf der Startseite steht: 899&nbsp;€ einmalig
+      oder 49&nbsp;€ im Monat, Einrichtungsgebühr 0&nbsp;€. Extras wie Logo-Design
+      oder Zusatzseiten haben feste Preise und kommen nur auf Ihren Wunsch dazu.</p>
+    </details>
+    <details>
+      <summary>Wie schnell werden Änderungswünsche umgesetzt?</summary>
+      <p>Im Rundum-Paket schicken Sie einfach eine E-Mail – kleine Änderungen
+      (Öffnungszeiten, Preise, Texte, Fotos) sind meist noch am selben Tag
+      fertig. Sie bekommen dann einen Ansichts-Link und geben die Änderung
+      mit einem kurzen „Passt“ frei, bevor sie online geht.</p>
+    </details>
+  </div>
+</section>
+
+<section>
+  <div class="finale">
+    <div class="vorzeile">Noch offen?</div>
+    <h2>Fragen Sie einfach direkt nach.</h2>
+    <p>Der erste Entwurf ist kostenlos – Sie gehen dabei kein Risiko ein.
+    Und wenn Sie erst einmal Preise vergleichen wollen: unser
+    <a href="ratgeber-website-kosten.html" style="color:var(--cyan);">ehrlicher
+    Kosten-Ratgeber</a> hilft.</p>
+    <a class="cta" href="kontakt.html">Jetzt Kontakt aufnehmen →</a>
+  </div>
+</section>
+
+<footer>
+  <span>© Nico Sommer · <a href="index.html" style="color:var(--cyan); text-decoration:none;">sommerwebdesign.com</a></span>
+  <span><a href="index.html">Start</a> · <a href="leistungen.html">Leistungen</a> · <a href="ueber-mich.html">Über mich</a> · <a href="faq.html">FAQ</a> · <a href="kontakt.html">Kontakt</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+</footer>
+</body>
+</html>

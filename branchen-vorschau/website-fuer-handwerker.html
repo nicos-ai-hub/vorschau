@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Websites für Handwerker – gefunden werden, Aufträge gewinnen | sommerwebdesign.com</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="canonical" href="https://www.sommerwebdesign.com/website-fuer-handwerker.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sommer Webdesign">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Websites für Handwerker – gefunden werden, Aufträge gewinnen">
+<meta property="og:description" content="Website für Handwerksbetriebe: bei Google in Ihrer Region gefunden werden, Anrufe direkt vom Handy, Referenzfotos die überzeugen. 899 € einmalig oder 49 €/Monat – Entwurf kostenlos vorab.">
+<meta property="og:url" content="https://www.sommerwebdesign.com/website-fuer-handwerker.html">
+<meta property="og:image" content="https://www.sommerwebdesign.com/og-bild.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Website für Handwerksbetriebe: bei Google in Ihrer Region gefunden werden, Anrufe direkt vom Handy, Referenzfotos die überzeugen. 899 € einmalig oder 49 €/Monat – Entwurf kostenlos vorab.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0c11; --flaeche: #10131a; --linie: rgba(255,255,255,.08);
+    --text: #e8eaf0; --leise: #9aa3b5;
+    --cyan: #67e8f9; --violett: #a78bfa; --pink: #f0abfc;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  ::selection { background: #a78bfa55; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text);
+    line-height: 1.65; overflow-x: hidden; }
+  .glut { position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background:
+      radial-gradient(600px 400px at 85% -5%, rgba(167,139,250,.16), transparent 65%),
+      radial-gradient(700px 500px at -10% 25%, rgba(103,232,249,.10), transparent 65%); }
+  h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+  .verlauf-text { background: linear-gradient(92deg, var(--cyan), var(--violett) 55%, var(--pink));
+    -webkit-background-clip: text; background-clip: text; color: transparent; }
+  header { position: sticky; top: 0; z-index: 50;
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    padding: .85rem 5vw; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    background: rgba(10, 12, 17, .72); border-bottom: 1px solid var(--linie); }
+  .marke { text-decoration: none; display: inline-flex; align-items: center; gap: .55rem; border: 1.5px solid rgba(232,234,240,.7); border-radius: 999px; padding: .42rem 1.05rem; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: .78rem; letter-spacing: .18em; color: #e8eaf0; }
+  .marke b { color: #67e8f9; font-weight: 500; }
+  nav { display: flex; gap: 1.1rem; align-items: center; white-space: nowrap; }
+  nav a { color: var(--leise); text-decoration: none; font-size: .9rem; font-weight: 500; }
+  nav a:hover { color: #fff; }
+  nav a.knopf { color: #0a0c11; background: #fff; padding: .5rem 1.1rem; border-radius: 999px; font-weight: 600; }
+  nav a.knopf:hover { background: var(--cyan); }
+  .nav-knopf { display: none; background: rgba(255,255,255,.04); border: 1px solid var(--linie);
+    color: var(--text); font-size: 1.15rem; border-radius: 10px; padding: .35rem .75rem;
+    cursor: pointer; line-height: 1; }
+  @media (max-width: 1020px) {
+    header { flex-wrap: wrap; }
+    .nav-knopf { display: block; }
+    nav { display: none; width: 100%; flex-direction: column; align-items: stretch;
+      gap: .2rem; padding: .6rem 0 .3rem; }
+    nav.offen { display: flex; }
+    nav a { padding: .55rem .2rem; font-size: 1rem; border-bottom: 1px solid var(--linie); }
+    nav a:last-child { border-bottom: 0; }
+    nav a.knopf { text-align: center; margin-top: .4rem; }
+  }
+  .hero { padding: clamp(3rem, 7vw, 5rem) 5vw clamp(1.4rem, 3vw, 2rem); max-width: 1100px; margin: 0 auto; }
+  .abzeichen { display: inline-flex; align-items: center; gap: .5rem; font-size: .82rem; color: var(--leise);
+    border: 1px solid var(--linie); background: rgba(255,255,255,.03);
+    padding: .35rem .9rem; border-radius: 999px; margin-bottom: 1.4rem; }
+  .abzeichen::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%;
+    background: #34d399; box-shadow: 0 0 10px #34d399; }
+  .hero h1 { font-size: clamp(1.9rem, 4.8vw, 3rem); font-weight: 700; line-height: 1.13;
+    letter-spacing: -.02em; max-width: 24ch; }
+  .hero .lauftext { margin-top: 1.3rem; font-size: 1.06rem; color: var(--leise); max-width: 60ch; }
+  section { padding: clamp(1.4rem, 5vw, 2.4rem) 5vw; max-width: 1100px; margin: 0 auto; }
+  .vorzeile { font-size: .8rem; letter-spacing: .18em; text-transform: uppercase;
+    font-weight: 600; color: var(--violett); margin-bottom: .7rem; }
+  h2 { font-size: clamp(1.45rem, 3vw, 2rem); font-weight: 700; letter-spacing: -.015em;
+    max-width: 36ch; margin-bottom: 1.3rem; }
+  .karten { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 800px) { .karten { grid-template-columns: 1fr; } }
+  .karte { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 18px;
+    padding: 1.4rem; }
+  .karte .icon { font-size: 1.4rem; }
+  .karte h3 { font-size: 1.02rem; margin: .6rem 0 .3rem; }
+  .karte p { color: var(--leise); font-size: .92rem; }
+  .beispiel { border: 1px solid transparent; border-radius: 20px; padding: 1.3rem 1.5rem;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+    background: linear-gradient(var(--flaeche), var(--flaeche)) padding-box,
+                linear-gradient(120deg, var(--cyan), var(--violett), var(--pink)) border-box; }
+  .beispiel p { color: var(--leise); font-size: .95rem; max-width: 56ch; }
+  .beispiel p b { color: var(--text); }
+  .cta { display: inline-flex; align-items: center; gap: .5rem; text-decoration: none;
+    font-weight: 600; font-size: .95rem; padding: .8rem 1.5rem; border-radius: 999px;
+    background: linear-gradient(92deg, var(--cyan), var(--violett)); color: #0a0c11;
+    transition: transform .2s, box-shadow .2s; }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(167,139,250,.35); }
+  .preiszeile { border: 1px solid var(--linie); border-radius: 18px; background: var(--flaeche);
+    padding: 1.2rem 1.5rem; color: var(--leise); font-size: .96rem; }
+  .preiszeile b { color: var(--text); }
+  details { border: 1px solid var(--linie); border-radius: 14px; background: var(--flaeche);
+    padding: .9rem 1.2rem; margin-bottom: .7rem; }
+  details[open] { border-color: rgba(167,139,250,.4); }
+  summary { cursor: pointer; font-weight: 600; font-size: .96rem; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  details p { margin-top: .7rem; color: var(--leise); font-size: .93rem; max-width: 68ch; }
+  .finale { text-align: center; border: 1px solid var(--linie); border-radius: 26px;
+    padding: clamp(2.2rem, 6vw, 3.6rem) 5vw; background:
+      radial-gradient(500px 260px at 50% -20%, rgba(167,139,250,.18), transparent 70%), var(--flaeche); }
+  .finale p { color: var(--leise); max-width: 54ch; margin: 0 auto 1.5rem; }
+  footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    padding: 1.6rem 5vw 2.2rem; max-width: 1100px; margin: 0 auto;
+    color: var(--leise); font-size: .84rem; border-top: 1px solid var(--linie); }
+  footer a { color: var(--leise); }
+  footer a:hover { color: #fff; }
+  body::after { content: ""; position: fixed; inset: 0; z-index: 90; pointer-events: none; opacity: .05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E"); }
+</style>
+</head>
+<body>
+<div class="glut"></div>
+<header>
+  <a class="marke" href="index.html"><svg width="16" height="9" viewBox="0 0 16 9" aria-hidden="true"><path d="M1 9A7 7 0 0 1 15 9Z" fill="#facc15"/></svg>SOMMER <b>WEBDESIGN</b></a>
+  <button class="nav-knopf" aria-label="Menü öffnen" onclick="document.querySelector('nav').classList.toggle('offen')">☰ Menü</button>
+  <nav onclick="if(event.target.tagName==='A')this.classList.remove('offen')">
+    <a href="index.html">Start</a>
+    <a href="leistungen.html">Leistungen</a>
+    <a href="index.html#arbeiten">Arbeiten</a>
+    <a href="ueber-mich.html">Über mich</a>
+    <a href="index.html#preise">Preise</a>
+    <a href="faq.html">FAQ</a>
+    <a class="knopf" href="kontakt.html">Projekt anfragen</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="abzeichen">Für Dachdecker, SHK, Elektro, Maler &amp; alle Gewerke</div>
+  <h1>Ihre Kunden suchen ihren <span class="verlauf-text">Handwerker mit dem Handy</span>. Finden sie Sie?</h1>
+  <p class="lauftext">Wer heute einen Dachdecker, Installateur oder Maler braucht, tippt „Gewerk + Ort“ ins Handy und ruft einen der ersten Treffer an. Betriebe ohne moderne Website tauchen dort nicht auf – die Aufträge gehen an den Wettbewerb, der sichtbar ist. Volle Auftragsbücher heute schützen nicht vor der ruhigen Saison morgen.</p>
+</div>
+
+<section>
+  <div class="vorzeile">Darauf kommt es an</div>
+  <h2>Was eine Handwerker-Website können muss</h2>
+  <div class="karten">
+    <div class="karte"><span class="icon">📞</span><h3>Anruf mit einem Fingertipp</h3><p>Handwerker-Kunden rufen an, statt Formulare auszufüllen. Ihre Nummer gehört groß auf jede Seite – ein Tipp aufs Handy, und es klingelt bei Ihnen.</p></div>
+    <div class="karte"><span class="icon">📸</span><h3>Referenzen, die überzeugen</h3><p>Ein Foto vom fertigen Dach oder Bad sagt mehr als jeder Werbetext. Ihre besten Projekte bekommen einen festen Platz.</p></div>
+    <div class="karte"><span class="icon">📍</span><h3>In Ihrer Region gefunden werden</h3><p>Ihre Website wird so gebaut, dass Google versteht: Dieser Betrieb arbeitet in diesem Einzugsgebiet – die Grundlage, um bei „Dachdecker + Ihre Stadt“ aufzutauchen.</p></div>
+    <div class="karte"><span class="icon">🚨</span><h3>Notdienst &amp; Erreichbarkeit</h3><p>Wenn es tropft, zählt jede Minute: Notdienst-Zeiten und Erreichbarkeit klar sichtbar – so werden aus Notfällen Kunden.</p></div>
+    <div class="karte"><span class="icon">🧾</span><h3>Rechtssicher ohne Kopfschmerzen</h3><p>Impressum und Datenschutzerklärung nach deutschem Recht sind bei jeder Website automatisch dabei.</p></div>
+    <div class="karte"><span class="icon">🛠</span><h3>Null Pflegeaufwand für Sie</h3><p>Neue Mitarbeiter, andere Zeiten, neue Fotos von der Baustelle? Eine kurze E-Mail genügt – im Rundum-Paket meist noch am selben Tag online.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="beispiel">
+    <p><b>So kann das aussehen:</b> ein kompletter Beispiel-Entwurf für einen Dachdeckerbetrieb – genau so einen Entwurf bekommen Sie kostenlos für Ihren eigenen Betrieb.</p>
+    <a class="cta" href="beispiel-entwurf.html" target="_blank">Beispiel-Entwurf ansehen ↗</a>
+  </div>
+</section>
+
+<section>
+  <div class="vorzeile">Klare Preise</div>
+  <div class="preiszeile">💶 <b>899&nbsp;€ einmalig</b> oder <b>49&nbsp;€/Monat</b> im
+  Rundum-Paket (Hosting, Pflege und Änderungen inklusive) – keine Einrichtungsgebühr,
+  Impressum &amp; Datenschutz immer dabei. Und das Wichtigste: Sie sehen Ihren fertigen
+  Entwurf, <b>bevor</b> Sie einen Cent bezahlen.
+  <a href="ratgeber-website-kosten.html" style="color:var(--cyan);">Zum ehrlichen Kosten-Vergleich →</a></div>
+</section>
+
+<section>
+  <div class="vorzeile">Häufige Fragen aus der Branche</div>
+  <details><summary>Ich bekomme meine Aufträge über Empfehlungen – brauche ich überhaupt eine Website?</summary><p>Gerade dann: Empfohlene Kunden googeln Ihren Betriebsnamen, bevor sie anrufen. Finden sie nichts oder eine veraltete Seite, wirkt der Betrieb kleiner, als er ist. Die Website muss keine Aufträge „ersetzen“ – sie sorgt dafür, dass Empfehlungen nicht auf den letzten Metern verloren gehen.</p></details>
+  <details><summary>Ich habe keine Zeit, mich um eine Website zu kümmern.</summary><p>Müssen Sie auch nicht. Im Rundum-Paket kümmere ich mich um Technik, Hosting und Änderungen – Sie schicken höchstens mal eine E-Mail mit neuen Fotos oder Zeiten. Mehr Aufwand entsteht für Sie nicht.</p></details>
+  <details><summary>Was kostet eine Handwerker-Website?</summary><p>Bei mir: 899 € einmalig oder 49 € im Monat im Rundum-Paket – marktüblich zahlen Betriebe bei Freelancern 1.500–3.500 € plus Stundensätze für jede spätere Änderung. Den fertigen Entwurf sehen Sie kostenlos, bevor Sie sich entscheiden.</p></details>
+</section>
+
+<section>
+  <div class="finale">
+    <div class="vorzeile">Kostenlos &amp; unverbindlich</div>
+    <h2 style="margin:0 auto 1rem;">Ihr Betrieb verdient einen starken Auftritt.</h2>
+    <p>Schreiben Sie mir kurz den Namen Ihres Betriebs (und den Link zur alten
+    Website, falls vorhanden) – Sie bekommen den fertigen Entwurf kostenlos
+    zum Anschauen. Kein Kleingedrucktes, kein Risiko.</p>
+    <a class="cta" href="mailto:sommer@sommerwebdesign.com?subject=Kostenloser%20Entwurf%20f%C3%BCr%20meinen%20Handwerksbetrieb">Kostenlosen Entwurf anfragen →</a>
+  </div>
+</section>
+
+<footer>
+  <span>© Nico Sommer · <a href="index.html" style="color:var(--cyan); text-decoration:none;">sommerwebdesign.com</a></span>
+  <span><a href="index.html">Start</a> · <a href="leistungen.html">Leistungen</a> · <a href="ueber-mich.html">Über mich</a> · <a href="faq.html">FAQ</a> · <a href="kontakt.html">Kontakt</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+</footer>
+</body>
+</html>
